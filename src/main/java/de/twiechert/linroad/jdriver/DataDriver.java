@@ -18,7 +18,8 @@ public class DataDriver {
 
 
     public DataDriver(String path) {
-        System.setProperty("jna.library.path", "datadriver");
+        //System.setProperty("jna.library.path", "datadriver");
+        System.setProperty("jna.library.path", "/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/libdatadriver.dylib");
         this.path = path;
 
     }
