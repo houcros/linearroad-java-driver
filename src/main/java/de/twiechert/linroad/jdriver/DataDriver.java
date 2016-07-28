@@ -7,7 +7,7 @@ import com.sun.jna.Native;
  */
 public class DataDriver {
 
-    // provide as arguement
+    // provide as argument
     public static void main(String[] args) {
      DataDriver dataDriver = new DataDriver(args[0]);
         dataDriver.runSample();
@@ -18,8 +18,8 @@ public class DataDriver {
 
 
     public DataDriver(String path) {
-        //System.setProperty("jna.library.path", "datadriver");
-        System.setProperty("jna.library.path", "/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/libdatadriver.dylib");
+        System.setProperty("jna.library.path", "datadriver");
+        //System.setProperty("jna.library.path", "/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/libdatadriver.dylib");
         this.path = path;
 
     }
@@ -43,8 +43,5 @@ public class DataDriver {
     }
 
     public DataDriverLibrary getLibrary() {return instance;}
-
-
-
 
 }
